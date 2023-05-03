@@ -5,4 +5,6 @@ I created docker-compose.yml which has mongodb as the servier ,backend container
 updated my npm to version had an error with the backend not connecting 
 edited my  base image to node:20.0.0-alpine3.16 I
 changed backend/package-lock.json to state
-updated backend/server s
+updated client/serverjs
+tested my app by adding an image which worked.
+posted yoloclient and yolo backend imgaes to dockerhub which reduced the volume to  64mb and 154.68mb respectivy 

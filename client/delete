@@ -1,0 +1,13 @@
+ IMAGE ID       CREATED          SIZE
+tanyaconny/yolo_client    v.0.0     29edf712cc44   20 minutes ago   461MB
+<none>                    <none>    956b182424eb   30 minutes ago   461MB
+tanyaconny/yolo_backend   v.0.0     b4b1efbed563   31 minutes ago   221MB
+yolo-backend              v1.0.3    e15645628e04   3 days ago       213MB
+yolo-backend              v1.0.2    e71d6545a46f   3 days ago       213MB
+yolo-backend              v1.0.1    fcca1d9f68ec   3 days ago       213MB
+mongo-db                  v3        32a6812bcebe   5 days ago       829MB
+mongo-db                  v2        5880dc415224   5 days ago       829MB
+mongo-db                  v1        568549e0e616   5 days ago       829MB
+yolo-backend              v1.0.0    70a678ac1ac7   8 days ago       213MB
+yolo-client               v1.0.0    69198bd67c23   8 days ago       438MB
+composetest-web           latest    2efccd0b7ba2
