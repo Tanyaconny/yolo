@@ -16,4 +16,7 @@
       git: 
         repo: '{{repo}}'
         version: '{{yolo_version}}' 
-        dest: '{{dest}}'        
+        dest: '{{dest}}'    
+    - name: Install Docker 
+      include_role:
+          name: docker        
