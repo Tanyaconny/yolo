@@ -1,8 +1,8 @@
 FROM node:latest
 RUN mkdir -p /app
 WORKDIR /app
-COPY backend/package*.json ./
+COPY package*.json ./
 RUN npm install 
-COPY backend/ ./
+COPY . ./
 EXPOSE $PORT
 CMD ["npm", "start"]
