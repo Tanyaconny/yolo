@@ -8,3 +8,12 @@
     - name: update apt cache
       apt: 
         update_cache: yes
+  tasks: 
+    - name: Install Git 
+      include_role: 
+          name: git     
+    - name: Clone Git Repo
+      git: 
+        repo: '{{repo}}'
+        version: '{{yolo_version}}' 
+        dest: '{{dest}}'        
