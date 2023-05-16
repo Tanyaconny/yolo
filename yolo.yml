@@ -1,6 +1,6 @@
 #Git clone variables
 #git repo
-repo: "https://github.com/Tanyaconny/yolo.git"
+repo: "https://github.com/Tanyaconny/yolo"
 #branch
 yolo_version: "master"
 #repo destination

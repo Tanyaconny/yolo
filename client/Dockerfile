@@ -1,6 +1,12 @@
-FROM node:20.0.0-alpine3.16
+FROM node:latest
+RUN mkdir -p /app
 WORKDIR /app
-COPY package*.json .
-RUN npm install
-COPY ./ ./
-CMD ["npm", "run","start"]
+COPY client/package*.json ./
+RUN npm install 
+COPY client/ ./
+RUN npm run build
+EXPOSE $PORT
+ENV NUXT_HOST=0.0.0.0
+ENV NUXT_PORT=$PORT
+ENV PROXY_API = $PROXY_API
+CMD [ "npm", "start"]

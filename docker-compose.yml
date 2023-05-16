@@ -3,6 +3,8 @@ services:
   mongo_db:
     container_name: yolodb
     image: mongo:latest
+    environment: 
+      MONGO_INITDB_DATABSE: yolomy
     restart: always 
     ports:
       - 2717:27017
@@ -19,7 +21,7 @@ services:
         - .:/app/yolo
     environment:
       PORTS: 5000
-      MONGODB_URI: mongodb://mongo_db:27017
+      MONGODB_URI: mongodb://mongo_db:27017/yolomy
       DB_NAME: yolomy
     depends_on: 
       - mongo_db
@@ -33,6 +35,7 @@ services:
       - 3000:3000
     environment:
       PORTS: 3000
+      PROXY_API: http://backend:3000/
     depends_on:
       - backend
 
