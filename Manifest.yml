@@ -3,19 +3,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app-deployment
+  name: yolomy-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: yolomy
   template:
     metadata:
       labels:
-        app: my-app
+        app: yolomy
     spec:
       containers:
-        - name: my-app-container
+        - name: yolo client
           image: tanyaconny/yolo_client:v.0.0
           ports:
             - containerPort: 3000
@@ -37,10 +37,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app-service
+  name: yolomy-service
 spec:
   selector:
-    app: my-app
+    app: yolomy
   ports:
     - protocol: TCP
       port: 80
