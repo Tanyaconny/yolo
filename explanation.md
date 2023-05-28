@@ -24,3 +24,32 @@ Once the playbook was complete, I used it to clone the code from the GitHub repo
 It's worth noting that the project had already been bootstrapped, meaning that following the instructions in the README file automatically launched the application in the browser after running the playbooks successfully.
 
 As part of the requirements, I needed to test the "Add Product" functionality. This feature allowed me to add a product through a provided form, testing the capability to load retail products onto the website. Ensuring the proper functioning of this functionality was crucial for the final deliverable of the assignment.
+
+
+# #Kubernetes  Orchestration
+ # steps
+ 1. created a mernifest file 
+        a.deployment folder
+            -client.yml
+            -backend.yml
+        b.created services folder
+            -backend.yml
+            -client.yml
+            -mongidb.yml
+        c.created startfulset folder  
+            -db-statefulset.yml
+            -mongodb-pvc.yml
+
+2. Monitor the deployment:
+        ◦ Once the manifests are applied, I can monitor the deployment using various I  created a cluster :gcloud container clusters create-auto yolo-app --region us-central1.
+        ◦ I use kubectl get pods to check the status of the pods and ensure they are running.
+            ▪ I use kubectl get services to retrieve information about the services, including external IP addresses or ports assigned.
+3. Deployment to K8s:
+        ◦ I cloned my repository on cloud shell to to link my yolo application
+        ◦ cd in to manifest then ls to see the folders
+        ◦ I run the commands kubectl apply -f for  Deployments,services and statefulset respectfully
+4. Test and debug:
+        ◦ After the deployment and exposure of my application, I thoroughly test it to ensure it functions as expected. With :kubectl get pods
+          
+        ◦ If any issues arise during testing, I apply debugging measures to identify and resolve the problems. This may involve examining pod logs, checking the status of the related resources, or using Kubernetes debugging tools.
+By following these steps, I can successfully deploy my application on Kubernetes, monitor its status, expose it to internet traffic, and perform necessary testing and debugging.
