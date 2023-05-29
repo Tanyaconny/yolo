@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: tanyaconny/yolo_client:v.0.0
+          image: tanyaconny/yolo_client:v.1.0
           ports:
             - containerPort: 3000
